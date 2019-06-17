@@ -1,0 +1,18 @@
+.loginComponent{
+    margin-left: 33%;
+    margin-top: 10%;
+}
+h1{
+    color: #0f6cc4;
+    font-family:cursive;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.validation-message {
+    position: absolute;
+    margin-bottom: 10px;
+    color: #F46F5D;
+    font-size: 11px;
+  }

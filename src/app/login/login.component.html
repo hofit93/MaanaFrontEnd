@@ -1,0 +1,21 @@
+<div class="loginComponent">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Login </h1>
+      <form>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input id="email" type="email" class="form-control" id="email" name="email" [(ngModel)]="email" placeholder="name@example.com" required>
+          <div *ngIf="!email_valid" class="validation-message">Mandatory field !</div>
+          <div *ngIf="!email_format_valid" class="validation-message">Email format is not valid!</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input id="password" type="password" class="form-control" id="pwd" name="passowrd" [(ngModel)]="password" required>
+          <div *ngIf="!Password_valid" class="validation-message">Mandatory field !</div>
+        </div>
+        <button class="btn btn-primary" (click)="login(email, password)">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
